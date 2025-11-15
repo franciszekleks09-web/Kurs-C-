@@ -1,0 +1,19 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int a;
+	cout << "Podaj wartosc a";
+	cin >> a;
+	if (a % 2 == 0)
+	{
+		cout << "liczba parzysta";
+	}
+	else
+	{
+		cout << "liczba nieparzysta";
+	}
+		return 0;
+}
