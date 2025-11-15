@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int dystans;
+	int czas_podruzy;
+	cout << "Podaj dystans";
+	cin>> dystans;
+	cout << "Podaj czas podruzy";
+	cin >> czas_podruzy;
+
+	int srednia_prendkosc = dystans / czas_podruzy;
+	cout << srednia_prendkosc;
+		return 0;
+}
