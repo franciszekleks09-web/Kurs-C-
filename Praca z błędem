@@ -1,0 +1,34 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int a;
+	cout << "Podaj wartosc a";
+	cin>> a;
+	if (a > 0)
+	{
+		cout << "Dodadnia"; 
+		if (a % 2 = 0)
+		{
+			cout << "pazysta";
+		}
+		else
+		{
+			cout << "niepazysta";
+		}
+	}
+	else
+	{
+		if (a<0)
+		{
+			cout << "ujemna";
+		}
+		else
+		{
+			cout << "zero";
+		}
+	}
+		return 0;
+}
