@@ -1,0 +1,14 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int cena_benzyny_za_1l;
+	cout<< "Podaj cene benzyny";
+	cin >> cena_benzyny_za_1l;
+	int trasa = 335;
+	float spalanie_na_1km = 0.9;
+	cout << "Koszt przejazdu z Katowic do Warszawy: " << cena_benzyny_za_1l * spalanie_na_1km * trasa;
+		return 0;
+}
