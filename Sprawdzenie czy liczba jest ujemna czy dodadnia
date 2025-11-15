@@ -1,0 +1,14 @@
+using namespace std;
+
+int main()
+{
+	int a;
+	cout << "Podaj wartosc a: ";
+	cin >> a;
+	if (a >= 0) cout << " Liczba nieujemna";
+	else
+	{
+		a < 0; cout << " liczba ujemna";
+	}
+		return 0;
+}
