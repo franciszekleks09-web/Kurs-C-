@@ -1,0 +1,14 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int promien;
+	cout << "Podaj promien: ";
+	cin >> promien;
+	float pi =3.14;
+	cout << "Pole: " << pi * promien * promien;
+	cout << "Obwud: " << 2 * pi * promien;
+		return 0;
+}
