@@ -10,7 +10,7 @@ int main()
 	if (a > 0)
 	{
 		cout << "Dodadnia"; 
-		if (a % 2 = 0)
+		if (a % 2 == 0)
 		{
 			cout << "pazysta";
 		}
