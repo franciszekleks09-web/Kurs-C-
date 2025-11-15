@@ -1,0 +1,12 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int stopnie_celcjusza;
+	cout << "podaj temperature w stopniach celcjusza";
+	cin >> stopnie_celcjusza;
+	cout << "Stopnie Fahrenheita: " << (stopnie_celcjusza * 1.8) + 32;
+		return 0;
+}
