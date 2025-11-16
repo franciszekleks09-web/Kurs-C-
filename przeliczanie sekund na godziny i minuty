@@ -1,0 +1,20 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int sekundy;
+	cout << "Podaj sekundy: ";
+	cin >> sekundy;
+	int minuty=sekundy/60;
+	int godziny=minuty/60;
+
+	
+
+	cout << " Sekundy: " << sekundy;
+	cout << " Minuty: " << minuty;
+	cout << " Godziny: " << godziny;
+
+		return 0;
+}
