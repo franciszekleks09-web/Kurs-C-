@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int a;
+	int b;
+
+	cout << "podaj dlugosc boku a: ";
+	cin >> a;
+	cout << "podaj dlugosc boku b: ";
+	cin >> b;
+	cout << "przekatne prostokata: " << sqrt(a * a + b * b);
+
+		return 0;
+}
