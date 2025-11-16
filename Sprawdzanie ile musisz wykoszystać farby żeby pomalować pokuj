@@ -1,0 +1,25 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	double pierfszy_wymiar;
+	double drugi_wymiar;
+	cout << "podaj pierfsz wymiar: " << endl;
+	cin >> pierfszy_wymiar;
+	cout << "podaj drugi wymiar: " << endl;
+	cin >> drugi_wymiar;
+	int pole_powierzchni;
+	pole_powierzchni = pierfszy_wymiar * drugi_wymiar;
+	int powierzchnia_jaka_pomaluje_1l_farby;
+	cout << "podaj jaka powierzchnie pomalujesz 1l" << endl;
+	cin >> powierzchnia_jaka_pomaluje_1l_farby;
+
+	int potrzebna_ilosc_farby;
+	potrzebna_ilosc_farby = pole_powierzchni / powierzchnia_jaka_pomaluje_1l_farby;
+
+	cout << "Ptrzebna ilosc farby do pomalowania pokoju w litrach: " << potrzebna_ilosc_farby << endl;
+
+		return 0;
+}
