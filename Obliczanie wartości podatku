@@ -1,0 +1,27 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	double podatek_jesli_dochud_mniejszy_badz_ruwny_30000 = 0.12;
+	double podatek_od_nadwyzki = 0.32;
+	int dochud;
+
+	
+
+	cout << "Podaj dochud: ";
+	cin >> dochud;
+	if (dochud <= 30000)
+	{
+		cout << "wartosc podatku: " << dochud * podatek_jesli_dochud_mniejszy_badz_ruwny_30000;
+	}
+	else
+	{
+		cout << "wartosc podatku: " << (dochud - 30000) * podatek_od_nadwyzki + dochud * podatek_jesli_dochud_mniejszy_badz_ruwny_30000;
+	}
+	
+	
+		
+		return 0;
+}
