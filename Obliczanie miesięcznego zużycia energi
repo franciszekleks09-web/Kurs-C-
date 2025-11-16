@@ -1,0 +1,23 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int moc_w_W;
+	cout << " Podaj moc urzadzenia w Watach: ";
+	cin >> moc_w_W;
+	int liczba_godzin_pracy;
+	cout << " Podaj liczbe godzin pracy: ";
+	cin >> liczba_godzin_pracy;
+	int cena_kWh;
+	cout << " Podaj cene jednej kWh: ";
+	cin >> cena_kWh;
+
+	int miesieczne_zuzycie_energi = moc_w_W * liczba_godzin_pracy / 1000 * 31;
+	int miesieczny_koszt_za_zuzycie_energi = miesieczne_zuzycie_energi * cena_kWh;
+
+	cout << " Miesieczne zuzycie energi w kWh: " << miesieczne_zuzycie_energi;
+	cout << " Miesieczny koszt za zuzycie energi: " << miesieczny_koszt_za_zuzycie_energi;
+		return 0;
+}
