@@ -1,0 +1,18 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int a, b, c, d;
+	cout << "Podaj 1 wartosc: " << endl;
+	cin >> a;
+	cout << "Podaj 2 wartosc: " << endl;
+	cin >> b;
+	cout << "Podaj 3 wartosc: " << endl;
+	cin >> c;
+	cout << "podaj 4 wartosc: " << endl;
+	cin >> d;
+	cout << "Oto suma podanych wartosci: " << a + b + c + d;
+
+	return 0;}
