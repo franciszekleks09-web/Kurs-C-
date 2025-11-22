@@ -1,0 +1,36 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+	int a;
+	cout << "Podaj liczbe: ";
+	cin >> a;
+
+	if (a<=1)
+	{
+		cout << "liczba ta nie jest pierfsza" << endl;
+	}
+	else
+	{
+		bool jest_pierwsza = true;
+		for (int i = 2; i <= sqrt(a); i++)
+		{
+			if (a % i == 0) {
+				jest_pierwsza = false;
+				break;
+			}
+		}
+		if (jest_pierwsza)
+		{
+			cout << "Liczba ta jest liczba pierwsza" << endl;
+		}
+		else
+		{
+			cout << "Liczba ta nie jest liczba pierwsza" << endl;
+		}
+	}
+	
+	return 0;}
