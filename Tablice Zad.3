@@ -1,0 +1,23 @@
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+
+using namespace std;
+
+
+int main()
+{
+	double suma=0;
+	double ab[8];
+	cout << "Podaj 8 liczb: " << endl;
+
+	for (int i = 0; i < 8 ; i++)
+	{
+		cin >> ab[i];
+		suma = suma + ab[i];
+	}
+	cout << fixed << setprecision(2);
+	double srednia = suma / 8.00;
+	cout << "Srednia wynosi: " << srednia << endl;
+	return 0;
+}
