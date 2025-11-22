@@ -1,0 +1,20 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+void wypisz_sume(int a, int b)
+{
+	cout << "suma" << a << "+" << b << "=" << a + b << endl;
+}
+int suma(int a, int b)
+{
+	return a + b;
+}
+int main()
+{
+	wypisz_sume(3, 5);
+	wypisz_sume(5, 12);
+	cout << suma(5, 6);
+	
+	return 0;}
