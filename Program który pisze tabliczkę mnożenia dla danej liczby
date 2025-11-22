@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+	double a;
+	cout << "Podaj liczbe: " << endl;
+	cin >> a;
+	cout << "Tabliczka mnozenia dla podanej liczby"<< ":" << endl;
+	for (int i = 1; i <= 10; i++)
+	{
+		cout << a << "x" << i << "=" << a * i << endl;
+	}
+	
+	return 0;}
