@@ -1,0 +1,115 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+// Zad. 1
+void wypisz_roznica (int a, int b)
+{
+	cout << "roznica" << a << "i" << b << "=" << a - b << endl;
+
+}
+int roznica(int a, int b)
+{
+	return a - b;
+
+}
+// Zad. 2
+void wypisz_iloczyn(int a, int b)
+{
+	cout << "iloczyn" << a << "i" << b << "=" << a * b << endl;
+
+}
+int iloczyn(int a, int b)
+{
+	return a * b;
+
+}
+// Zad. 3
+double srednia (double a, double b)
+{
+	return(a + b) / 2.0;
+
+}
+// Zad. 4
+bool czy_parzysta(int c)
+{
+	return (c % 2 == 0);
+
+ }
+// Zad. 5
+int wartosc_bezwgledna(int n)
+{
+	if (n < 0)
+		return -n;
+	else return n;
+}
+// Zad. 6
+int pole_prostokata(int a, int b)
+{
+	return a * b;
+}
+// Zad. 7
+double pole_kola(double r)
+{
+	const double PI = 3.14;
+	return PI * r * r;
+}
+// Zad. 8
+int obwod_kwadratu(int a)
+{
+	return 4 * a;
+}
+// Zad. 9
+int minimum(int a, int b)
+{
+	if (a < b)
+		return a;
+	else return b;
+}
+// Zad. 10
+int maximum(int a, int b)
+{
+	if (a > b)
+		return a;
+	else return b;
+}
+
+// Podsumowanie
+int main()
+{
+	int a, b, c, r;
+	double x, y;
+	cout << "Podaj pierwsza liczbe: " << endl;
+	cin >> a;
+	cout << "Podaj droga liczbe: " << endl;
+	cin >> b;
+
+	cout << "Roznica" << a << "i" << b << "=" << roznica(a, b) << endl;
+	cout << "Iloczyn" << a << "i" << b << "=" << iloczyn(a, b) << endl;
+
+	cout << "Podaj pierwsza wartosc do sredniej: " << endl;
+	cin >> x;
+	cout << "Podaj droga wartosc do sredniej: ";
+	cin >> y;
+	cout << "Srednia liczb" << x << "i" << y << "=" << srednia(x, y) << endl;
+
+	cout << "Podaj liczbę by sprawdzić czy jest parzysta: " << endl;
+	cin >> c;
+	if (czy_parzysta(c)) {
+		cout << "Liczba " << c << " jest parzysta." << endl;
+	}
+	else {
+		cout << "Liczba " << c << " nie jest parzysta." << endl;
+	}
+	cout << "Wartosc bezwgledna z a " << wartosc_bezwgledna(a) << endl;
+	cout << "Pole prostokata= " << pole_prostokata(a, b) << endl;
+	cout << "Podaj promien: " << endl;
+	cin >> r;
+	cout << "Pole kola= " << pole_kola(r) << endl;
+	cout << "Obwod kwadratu wynosi" << obwod_kwadratu(a) << endl;
+	cout << "Minimum: " << minimum(a, b) << endl;
+	cout << "Maximum: " << maximum(a, b) << endl;
+
+	return 0;
+}
