@@ -1,0 +1,16 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int a{};
+	cout << "Podaj liczbe: ";
+	cin >> a;
+	while (a!=0)
+	{
+		cout << "To nie jest 0" << endl;
+		cout << "Podaj kolejna liczbe: " << endl;
+		cin >> a;
+	}
+	return 0;}
