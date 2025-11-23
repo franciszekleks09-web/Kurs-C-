@@ -1,0 +1,41 @@
+
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+
+using namespace std;
+
+
+int main()
+{
+    int tab1[5], tab2[5];
+    bool identyczne = true;
+
+    cout << "Podaj piec elementow 1 tablicy: " << endl;
+    for (int i = 0; i < 5; i++)
+    {
+        cin >> tab1[i];
+    }
+    cout << "Podaj piec elementow 2 tablicy" << endl;
+    for (int i = 0; i < 5; i++) {
+        cin >> tab2[i];
+    }
+
+    for (int i = 0; i < 5; i++)
+    {
+        if (tab1[i] != tab2[i])
+        {
+            identyczne = false;
+            break;
+        }
+    }
+    if (identyczne)
+    {
+        cout << "Tablicze sa identyczne" << endl;
+    }
+    else
+    {
+        cout << "Tablice nie sa identyczne" << endl;
+    }
+    return 0;
+}
